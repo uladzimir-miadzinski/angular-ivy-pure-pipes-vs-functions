@@ -1,4 +1,4 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-display-counter [counter]="num"></app-display-counter>
+<button (click)="increaseCount()">increaseCount</button>
+<button (click)="decreaseCount()">decreaseCount</button>
+<input (input)="changePrefix($event)" />
